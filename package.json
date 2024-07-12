@@ -19,8 +19,7 @@
     "emulators": "firebase emulators:start --only firestore,database --project test-project",
     "test": "firebase emulators:exec --only firestore,database \"yarn test:base\"",
     "test:cov": "firebase emulators:exec --only firestore,database \"yarn test:cov:base\"",
-    "size": "yarn build && size-limit",
-    "prepare": "husky"
+    "size": "yarn build && size-limit"
   },
   "peerDependencies": {
     "firebase-admin": "^11.0.0"
