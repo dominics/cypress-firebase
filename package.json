@@ -1,6 +1,6 @@
 {
   "name": "cypress-firebase",
-  "version": "0.0.0-development",
+  "version": "3.0.3-rc.0",
   "description": "Utilities to help testing Firebase projects with Cypress.",
   "main": "lib/index.js",
   "module": "lib-esm/index.js",
@@ -21,8 +21,7 @@
     "emulators": "firebase emulators:start --only firestore,database --project test-project",
     "test": "firebase emulators:exec --only firestore,database \"yarn test:base\"",
     "test:cov": "firebase emulators:exec --only firestore,database \"yarn test:cov:base\"",
-    "size": "yarn build && size-limit",
-    "prepare": "husky install && yarn clean && yarn build"
+    "size": "yarn build && size-limit"
   },
   "peerDependencies": {
     "firebase-admin": "^11.0.0"
